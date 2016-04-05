@@ -34,7 +34,7 @@
     
     //select sort
     var startSelect = new Date();
-    var testSelect = genArr(size).insertSort();
+    var testSelect = genArr(size).selectSort();
     var endISelect = new Date();
     console.log('selectSort:' + (endISelect.getTime()-startSelect.getTime())/1000 + ' sec');
 
@@ -43,9 +43,6 @@
     var testQuick = genArr(size).quickSort();
     var endQuick = new Date();
     console.log('quickSort:' + (endQuick.getTime()-startQuick.getTime())/1000 + ' sec');
-    console.log(testQuick);
-
-
     </script>
 </body>
 </html>
