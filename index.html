@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title> Sorting Algorithms </title>
+    <meta name="Admiral_Awesome" content="Sorting Algorithms" />
+    <script type="text/javascript" src="js/sort.js"></script>
+    
+
+</head>
+
+<body>
+    <script>
+    // testing
+    var size = 1000;
+    function genArr(size) {
+        var testArr = [];
+        for ( var i = 0; i < size; i++) {
+            testArr[i] = parseInt((Math.random()*100));
+        }
+        return testArr;
+    }
+    
+    //bubble sort
+    var startBubble = new Date();
+    var testBuble =  genArr(size).bubbleSort();
+    var endBubble = new Date();
+    console.log('bubbleSort:' + (endBubble.getTime()-startBubble.getTime())/1000 + ' sec');
+    
+    //insert sort
+    var startInsert = new Date();
+    var testInsert = genArr(size).insertSort();
+    var endInsert = new Date();
+    console.log('insertSort:' + (endInsert.getTime()-startInsert.getTime())/1000 + ' sec');
+    
+    //select sort
+    var startSelect = new Date();
+    var testSelect = genArr(size).insertSort();
+    var endISelect = new Date();
+    console.log('selectSort:' + (endISelect.getTime()-startSelect.getTime())/1000 + ' sec');
+
+    //quick sort
+    var startQuick = new Date();
+    var testQuick = genArr(size).quickSort();
+    var endQuick = new Date();
+    console.log('quickSort:' + (endQuick.getTime()-startQuick.getTime())/1000 + ' sec');
+    console.log(testQuick);
+
+
+    </script>
+</body>
+</html>
