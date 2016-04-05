@@ -1,4 +1,4 @@
-# Sport Algorithms JS
+# Sort Algorithms JS
 ### 1 Bubble sort
 ### 2 Insert sort
 ### 3 Select sort
